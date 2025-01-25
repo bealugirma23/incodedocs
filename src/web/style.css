@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e; /* Dark background */
+  color: #fff; /* White text */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #2a2a2a; /* Slightly lighter dark */
+  padding: 10px 20px;
+  border-bottom: 2px solid #4caf50; /* Emerald color */
+}
+
+.navbar input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  outline: none;
+  background-color: #3a3a3a; /* Input background */
+  color: #fff; /* Input text color */
+}
+
+.navbar input[type="text"]:focus {
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Emerald glow on focus */
+}
+
+#recent-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+#popular-container {
+  width: 100%;
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.items-component,
+.popular-items {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  border: 2px solid #4caf50; /* Emerald border */
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  background-color: #2a2a2a; /* Darker item background */
+}
+
+.items-component:hover {
+  background-color: rgba(76, 175, 80, 0.1); /* Light emerald on hover */
+}
+
+.items-component #main-image {
+  width: 40px; /* Adjusted for better visibility */
+  height: 40px; /* Adjusted for better visibility */
+  border-radius: 5px; /* Rounded image */
+}
+
+#to-side {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+#to-side p,
+#to-side h3 {
+  margin: 5px 0; /* Small margin for spacing */
+}
+
+#comp-image {
+  border-radius: 8px; /* Consistent rounding */
+}
+
+/* Shared sections */
+.recents-section,
+.popular-section {
+  margin: 20px;
+  padding: 15px;
+  background: #2a2a2a; /* Darker section background */
+  border-radius: 8px;
+}
+
+.recents-section h2,
+.popular-section h2 {
+  margin: 0;
+  font-size: 20px;
+  border-bottom: 2px solid #4caf50; /* Emerald underline */
+  padding-bottom: 5px;
+  color: #fff;
+}
+
+.details-page {
+  display: none; /* Hidden initially */
+}
+
+iframe {
+  width: 100%;
+  height: 100vh;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 8px; /* Consistent rounding */
+}
+/* Button Styles */
+#favoritesButton {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-left: 10px;
+}
+#backButton,
+#searchButton {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-left: 10px; /* Space between buttons */
+}
+
+#backButton {
+  background-color: #4caf50; /* Emerald background */
+  color: #fff; /* White text */
+  margin-right: 7px;
+}
+
+#backButton:hover {
+  background-color: rgba(76, 175, 80, 0.8); /* Darker emerald on hover */
+}
+
+#searchButton {
+  background-color: #3b3b3b; /* Darker background for search */
+  color: #fff; /* White text */
+}
+
+#searchButton:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Light gray on hover */
+}
+
+/* Additional styles for the buttons if needed */
+#backButton:focus,
+#searchButton:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Emerald glow on focus */
+}

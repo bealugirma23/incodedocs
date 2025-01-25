@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InCodeDocs</title>
+    <link rel="stylesheet" href="../web/style.css" />
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <!-- Navigation header -->
+    <div class="navbar">
+      <button id="backButton">Back</button>
+      <input
+        type="text"
+        id="search"
+        placeholder="Search documentation (e.g., Supabase, Next.js)..."
+      />
+      <button id="searchButton">Search</button>
+      <button id="favoritesButton" disabled>Favorites</button>
+    </div>
+
+    <!-- Recents -->
+    <section class="recents-section" id="recentsSection">
+      <h2>Recents</h2>
+      <div class="recent" id="recent-container"></div>
+    </section>
+
+    <!-- Popular -->
+    <section class="popular-section" id="popularSection">
+      <h2>Popular</h2>
+      <div class="popular" id="popular-container"></div>
+    </section>
+
+    <!-- The main iframe -->
+    <div class="details-page" id="detailsPage">
+      <iframe id="docsFrame" src=""></iframe>
+    </div>
+
+    <script src="../web/script.js"></script>
+  </body>
+</html>
