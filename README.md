@@ -22,6 +22,8 @@ Include if your extension adds any VS Code settings through the `contributes.con
 
 For example:
 
+
+
 This extension contributes the following settings:
 
 * `myExtension.enable`: Enable/disable this extension.
