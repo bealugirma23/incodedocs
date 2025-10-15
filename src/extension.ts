@@ -3,6 +3,8 @@ import * as path from "path";
 import * as fs from "fs";
 
 export function activate(context: vscode.ExtensionContext) {
+
+  // sdf
   context.subscriptions.push(
     vscode.commands.registerCommand("extension.openDocs", () => {
       const panel = vscode.window.createWebviewPanel(
